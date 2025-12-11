@@ -2,7 +2,11 @@
 Augusta Zukauskas, Research Study Assiatant at Department of Medical Social Sciences, Northwestern University Feinburg School of Medicine
 
 ## About
-This project analyzes research collaborations funded by the NIH amoung Big Ten universities. It aggregates award-level data, identifies cross-institution collaborations, and visualizes the network using chord diagrams. The goal was to provide a clear, compelling overview of collaboration patterns, strengths, and trends.
+This project analyzes project collaborations funded by the NIH amoung Big Ten universities. The goal was to provide a clear, compelling overview of collaboration patterns, strengths, and trends. 
+
+Data was sourced from NIH RePORTER, cleaned to include only Big en institutions, and normalized so variations in university names were grouped under a single standard name. Collaborations were counted when the same Principle Investigator (PI) ID appeared across more than one university, indicating shared involvement in multiple institutions. To highlight each institution's role, I created seperate chord diagrams focusing on individual universities and then combined these images into a single animated GIF using Adobe tools.
+
+Working on a NIH funded project has shown me the value of collaboration and dedication. This visualization highlights the effort and strong partnerships that drive our research forward.
 
 ### Data Sources:
 **NIH RePORTER Data**
@@ -11,10 +15,15 @@ This project analyzes research collaborations funded by the NIH amoung Big Ten u
 - **Format**: CSV
 - **Usage in this project**: Identifying collaborations by matching awards across institutions and aggregating collaboration counts
 
-**School Logos**
+**University Logos**
 - **Source**: https://bigten.org/
 - **Format**: SVG
-- **Usage in this project**: Used to display each school on the chord diagram
+- **Usage in this project**: Used to identify each university on the chord diagram
+
+**University Primary Colors**
+- **Source**: Official university brand guidlines or verified sources.
+- **Format**: Hex Codes
+- **Usage**: Chord diagram, for the university node
 
 ### Packages
 | Package       | Purpose                                                                 |
